@@ -1,0 +1,12 @@
+---
+title: Blog posts
+---
+
+%h1 Blog posts
+%ul
+  - sorted_articles.each do |article|
+    %li
+      %a{href: article.reps[:default].path}
+        = article[:title]
+      = surround ' (', ') ' do
+        = article[:created_at].strftime('%Y-%m-%d')
