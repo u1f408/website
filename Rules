@@ -1,0 +1,47 @@
+#!/usr/bin/env ruby
+
+compile '/**/*.haml' do
+  filter :haml, format: :html5
+  layout '/default.*'
+
+  if item.identifier =~ '**/index.*'
+    write item.identifier.without_ext + '.html'
+  else
+    write item.identifier.without_ext + '/index.html'
+  end
+end
+
+compile '/**/*.html' do
+  layout '/default.*'
+
+  if item.identifier =~ '**/index.*'
+    write item.identifier.to_s
+  else
+    write item.identifier.without_ext + '/index.html'
+  end
+end
+
+compile '/**/*.md' do
+  filter :kramdown
+  layout '/default.*'
+
+  if item.identifier =~ '**/index.*'
+    write item.identifier.without_ext + '.html'
+  else
+    write item.identifier.without_ext + '/index.html'
+  end
+end
+
+ignore '/css/_*'
+compile '/css/*.{sass,scss}' do
+  syntax = @item.identifier.ext.to_sym
+  filter :sass, syntax: syntax, style: :compact
+  write item.identifier.without_ext + '.css'
+end
+
+compile '/**/*' do
+  write item.identifier.to_s
+end
+
+layout '/**/*.haml', :haml, format: :html5
+layout '/**/*', :erb

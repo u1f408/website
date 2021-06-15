@@ -1,0 +1,12 @@
+nav {
+	margin: 1rem auto;
+	text-align: center;
+
+	a.brand {
+		color: var(--body-foreground);
+
+		&:hover, &:focus {
+			color: var(--body-background);
+		}
+	}
+}

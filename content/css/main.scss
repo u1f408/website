@@ -1,0 +1,43 @@
+@import "variables";
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+
+	width: 100%;
+	max-width: 100vw;
+
+	font: 110%/1.5 sans-serif;
+}
+
+body {
+	color: var(--body-foreground);
+	background: var(--body-background);
+}
+
+a {
+	display: inline-block;
+	border-radius: 2px;
+	text-decoration: none;
+	color: var(--link-foreground);
+
+	transition: 0.2s padding, 0.2s background-color, 0.2s color;
+
+	&:visited {
+		color: var(--link-foreground);
+	}
+
+	&:hover, &:focus {
+		padding: 0 0.25rem;
+		background: var(--link-foreground);
+		color: var(--body-background);
+	}
+}
+
+@import "navigation";
+@import "page_body";
+@import "utils";
