@@ -1,5 +1,7 @@
-output/
-tmp/
+.env*
 *.log
-.bundle/
-vendor/
+/.bundle
+/vendor
+/result
+/output
+/tmp
