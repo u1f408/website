@@ -7,7 +7,6 @@ title: Projects
 ## Bigger things
 
 * [Operating system development](/projects/osdev)
-* [Cidco MailStation stuff](/projects/mailstation)
 
 ## Smaller things
 
@@ -19,3 +18,7 @@ title: Projects
 ## Things we've contributed to
 
 * [Waterfall.social](https://waterfall.social): a tumblelog-format blogging website ([repository](https://github.com/MasterSteelblade/Waterfall))
+
+## Things that we're going to work on… eventually?
+
+* [Cidco MailStation stuff](/projects/mailstation)
