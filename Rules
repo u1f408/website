@@ -22,7 +22,7 @@ compile '/**/*.html' do
 end
 
 compile '/**/*.md' do
-  filter :kramdown
+  filter :kramdown, input: 'GFM', hard_wrap: false
   layout '/default.*'
 
   if item.identifier =~ '**/index.*'
