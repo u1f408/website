@@ -7,6 +7,7 @@ title: Projects
 ## Bigger things
 
 * [Operating system development](/projects/osdev)
+* [Palm OS development & tooling](/projects/palmos)
 
 ## Smaller things
 
