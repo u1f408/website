@@ -1,0 +1,15 @@
+= yield
+
+%footer.post-footer
+  %ul
+    %li
+      posted:
+      &= @item[:created_at].strftime("%Y-%m-%d")
+
+    - unless @item[:tags].empty?
+      %li
+        tags:
+        %ul
+          - @item[:tags].each do |tag|
+            %li
+              &= tag
