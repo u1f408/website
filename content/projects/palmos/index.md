@@ -10,6 +10,7 @@ Also known as: _we really like old technology, it seems…_
 * table of contents go here, hopefully
 {:toc}
 
+
 ## palm.rs
 
 palm.rs ([source][palmrs-repo], [docs][palmrs-docs]) is a collection of library
@@ -24,7 +25,6 @@ Current status:
     semi-human-readable format, optionally printing the content of each record
     as a pretty hex dump
 
-
 Short-term plans:
 
 * Tool for bidirectional sync between a Palm OS "Tasks" app database, and a
@@ -34,6 +34,7 @@ Short-term plans:
 Long-term plans:
 
 * HotSync desktop implementation
+
 
 ## Modern Palm OS compiler toolchain
 
@@ -46,10 +47,12 @@ toolchain.
 
 Work in progress.
 
+
 ## Our own Palm OS applications
 
 Nothing yet. Depends on getting the above-mentioned modern compiler toolchain
 working.
+
 
 ## Test & example files
 
@@ -58,9 +61,15 @@ working.
   * [hello-v1.prc][hello-prctools]: compiled with `prc-tools-remix`
   * ~~hello-v2.prc: compiled with the modern toolchain~~ (available when the
     modern toolchain works)
+* `ToDoDB.pdb` - a Palm OS Tasks / To Do application database, populated with
+  test data
+  * [ToDoDB-os4.pdb][]: exported from Palm OS Emulator running Palm OS 4 (usig
+    an m505 ROM), manually populated
+
 
 [palmrs-repo]: https://github.com/u1f408/palmrs/
 [palmrs-docs]: https://u1f408.github.io/palmrs/
 [hello-source]: https://github.com/jichu4n/prc-tools-remix/tree/master/tools/hello-world-app/
 [hello-prctools]: https://palm.sfo2.cdn.digitaloceanspaces.com/hello/hello-v1.prc
 [hello-modern]: https://palm.sfo2.cdn.digitaloceanspaces.com/hello/hello-v2.prc
+[ToDoDB-os4.pdb]: https://palm.sfo2.cdn.digitaloceanspaces.com/test-data/ToDoDB-os4.pdb
