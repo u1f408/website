@@ -2,6 +2,7 @@
 
 compile '/**/*.haml' do
   filter :haml, format: :html5
+  layout '/page.*' if item.identifier =~ '/projects/**/*'
   layout '/default.*'
 
   if item.identifier =~ '**/index.*'
@@ -12,6 +13,7 @@ compile '/**/*.haml' do
 end
 
 compile '/**/*.html' do
+  layout '/page.*' if item.identifier =~ '/projects/**/*'
   layout '/default.*'
 
   if item.identifier =~ '**/index.*'
@@ -23,6 +25,7 @@ end
 
 compile '/**/*.md' do
   filter :kramdown, input: 'GFM', hard_wrap: false
+  layout '/page.*' if item.identifier =~ '/projects/**/*'
   layout '/default.*'
 
   if item.identifier =~ '**/index.*'
