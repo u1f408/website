@@ -54,7 +54,14 @@ Nothing yet. Depends on getting the above-mentioned modern compiler toolchain
 working.
 
 
-## Test & example files
+## Resources
+
+* [Palm OS database formats](/projects/palmos/db-formats) - our own
+  accumulation of documentation on decoding various Palm OS application record
+  databases
+
+
+### Test & example files
 
 * `hello.prc` - a simple "hello world" application ([source][hello-source],
   from `prc-tools-remix`)
