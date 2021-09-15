@@ -38,7 +38,7 @@ a {
 	}
 }
 
-code {
+pre, code {
 	font-family: monospace;
 	display: inline-block;
 	margin: 0 0.125rem -0.025em 0.125rem;
@@ -49,6 +49,26 @@ code {
 	border: 1px solid var(--code-border);
 	border-radius: var(--code-border-radius);
 }
+
+pre {
+	width: 100%;
+	max-width: 100%;
+	max-height: 24rem;
+	overflow-x: auto;
+	overflow-y: scroll;
+
+	margin: 0.5rem 0;
+	padding: 1rem;
+	border-radius: 0;
+
+	> code {
+		margin: 0;
+		padding: 0;
+		border: none;
+		border-radius: 0;
+	}
+}
+
 
 @import "navigation";
 @import "breadcrumbs";

@@ -12,15 +12,46 @@ main {
 		border: 1px solid var(--image-border);
 	}
 
+	.imgalt {
+		display: block;
+		width: 100%;
+		text-align: center;
+
+		font-style: italic;
+		font-size: 0.8rem;
+
+		color: var(--image-alt-foreground);
+	}
+
 	a.imglink {
 		display: flex;
+		flex-flow: column wrap;
+		justify-content: flex-start;
+		align-items: center;
 		text-align: center;
+
+		gap: 0.5rem;
 		padding: 0.5rem;
+
 		background: var(--link-background);
+		border: 1px solid var(--link-border);
+
+		img {
+			border: none;
+		}
+
+		.imgalt {
+			transition: 0.2s color;
+		}
 
 		&:hover, &:focus {
 			padding: 0.5rem;
 			background: var(--link-foreground);
+
+			.imgalt {
+				color: var(--link-background);
+			}
 		}
+
 	}
 }
