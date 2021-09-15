@@ -1,0 +1,47 @@
+.system-member-card {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+
+	border: 1px solid var(--body-foreground);
+	border-radius: var(--body-border-radius);
+
+	gap: 0.5rem;
+	padding: 0.5rem;
+
+	@media screen and (min-width: 48rem) {
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-items: stretch;
+	}
+
+	.system-member-avatar {
+		display: block;
+		max-width: 8rem;
+		margin: 0;
+	}
+
+	.system-member-info {
+		width: 100%;
+		height: 100%;
+		flex: 1;
+
+		h1 {
+			margin: 0;
+			font-size: 1.25rem;
+		}
+
+		p {
+			margin: 0;
+
+			+ p {
+				margin-top: 0.5rem;
+			}
+		}
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}

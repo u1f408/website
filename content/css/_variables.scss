@@ -13,4 +13,7 @@
 	--code-border: rgba(48, 48, 48, 0.6);
 	--code-background: rgba(230, 230, 230, 1);
 	--code-foreground: rgba(48, 48, 48, 1);
+
+	--description-term-width: clamp(5rem, 30%, 9rem);
+	--description-details-width: clamp(10rem, 70%, 40rem);
 }

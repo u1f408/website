@@ -1,0 +1,38 @@
+dl {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0;
+
+	> * {
+		padding-top: 0.25em;
+	}
+}
+
+dt {
+	width: var(--description-term-width);
+	font-weight: bold;
+	font-family: sans-serif;
+	text-align: right;
+
+	+ dt {
+		padding-right: var(--description-details-width);
+	}
+
+	+ dt + dd {
+		margin-top: -1.625em;
+		padding-left: calc(var(--description-term-width) + 1em);
+	}
+}
+
+dd {
+	width: var(--description-details-width);
+	padding-left: 1em;
+	margin-left: 0px;
+
+	+ dd {
+		width: 100%;
+		padding-left: calc(var(--description-term-width) + 1em);
+	}
+}
+
