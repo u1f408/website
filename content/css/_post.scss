@@ -1,7 +1,8 @@
 .post-footer {
 	margin: 1rem 0 0 0;
-	padding: 1rem 0 0 0;
+	padding: 1rem 0;
 	border-top: 2px solid var(--body-foreground);
+	border-bottom: 2px solid var(--body-foreground);
 
 	& > ul {
 		margin: 0;
