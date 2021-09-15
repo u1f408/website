@@ -1,0 +1,10 @@
+- trail = iris_breadcrumb_trail
+- unless trail.empty?
+  %aside.breadcrumbs
+    %span you are here:
+    %ul.inline-list.path
+      - trail.each do |part|
+        - unless part.nil?
+          %li
+            %a{href: @config[:base_url] + part[:path], title: part[:title]}
+              &= part[:segment]
