@@ -17,6 +17,10 @@ html, body {
 body {
 	color: var(--body-foreground);
 	background: var(--body-background);
+
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 a {
@@ -74,6 +78,7 @@ pre {
 @import "breadcrumbs";
 @import "page_body";
 @import "post";
+@import "page_footer";
 
 @import "utils";
 @import "description_list";
