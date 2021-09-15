@@ -4,7 +4,7 @@
     %meta{charset: 'utf-8'}
     %meta{name: 'viewport', content: 'width=device-width; initial-scale=1'}
     %meta{name: 'generator', content: ['Nanoc', Nanoc::VERSION].join(' ')}
-    %link{rel: 'stylesheet', href: '/css/main.css'}
+    %link{rel: 'stylesheet', href: @config[:base_url] + '/css/main.css'}
     %title
       - if @item[:title]
         = succeed ' &raquo;' do
@@ -13,17 +13,7 @@
       catstret.ch
 
   %body
-    %nav
-      %ul.inline-list
-        %li
-          %a.brand{href: '/'}><
-            %strong>< catstret.ch
-        %li
-          %a{href: '/projects'}><
-            projects
-        %li
-          %a{href: '/blog'}><
-            blog
+    = render '/partials/navigation.haml'
 
     %main
       = yield

@@ -2,8 +2,9 @@
 
 compile '/**/*.haml' do
   filter :haml, format: :html5
-  layout '/post.*' if item[:kind] == 'article'
-  layout '/page.*' if item.identifier =~ '/projects/**/*'
+
+  layout '/article.*' if item[:kind] == 'article'
+  layout '/project.*' if item.identifier =~ '/projects/**/*'
   layout '/default.*'
 
   if item.identifier =~ '**/index.*'
@@ -14,8 +15,10 @@ compile '/**/*.haml' do
 end
 
 compile '/**/*.html' do
-  layout '/post.*' if item[:kind] == 'article'
-  layout '/page.*' if item.identifier =~ '/projects/**/*'
+  filter :erb
+
+  layout '/article.*' if item[:kind] == 'article'
+  layout '/project.*' if item.identifier =~ '/projects/**/*'
   layout '/default.*'
 
   if item.identifier =~ '**/index.*'
@@ -26,9 +29,11 @@ compile '/**/*.html' do
 end
 
 compile '/**/*.md' do
+  filter :erb
   filter :kramdown, input: 'GFM', hard_wrap: false
-  layout '/post.*' if item[:kind] == 'article'
-  layout '/page.*' if item.identifier =~ '/projects/**/*'
+
+  layout '/article.*' if item[:kind] == 'article'
+  layout '/project.*' if item.identifier =~ '/projects/**/*'
   layout '/default.*'
 
   if item.identifier =~ '**/index.*'

@@ -6,8 +6,8 @@ title: Projects
 
 ## Bigger things
 
-* [Operating system development](/projects/osdev)
-* [Palm OS development & tooling](/projects/palmos)
+* [Operating system development](<%= @config[:base_url] %>/projects/osdev)
+* [Palm OS development & tooling](<%= @config[:base_url] %>/projects/palmos)
 
 ## Smaller things
 
@@ -22,4 +22,4 @@ title: Projects
 
 ## Things that we're going to work on… eventually?
 
-* [Cidco MailStation stuff](/projects/mailstation)
+* [Cidco MailStation stuff](<%= @config[:base_url] %>/projects/mailstation)

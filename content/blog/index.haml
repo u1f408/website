@@ -6,7 +6,17 @@ title: Blog posts
 %ul
   - sorted_articles.each do |article|
     %li
-      %a{href: article.reps[:default].path}
-        = article[:title]
-      = surround ' (', ') ' do
-        = article[:created_at].strftime('%Y-%m-%d')
+      %a{href: @config[:base_url] + article.reps[:default].path}
+        &= article[:title]
+
+      %ul
+        %li
+          %ul.inline-list
+            %li
+              %span.sr-only posted:
+              &= article[:created_at].strftime('%Y-%m-%d')
+
+            - unless article[:tags].empty?
+              %li
+                tagged:
+                &= article[:tags].join(', ')

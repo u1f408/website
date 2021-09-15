@@ -56,9 +56,8 @@ working.
 
 ## Resources
 
-* [Palm OS database formats](/projects/palmos/db-formats) - our own
-  accumulation of documentation on decoding various Palm OS application record
-  databases
+* [Palm OS database formats][db-formats] - our own accumulation of
+  documentation on decoding various Palm OS application record databases
 
 
 ### Test & example files
@@ -76,6 +75,7 @@ working.
 
 [palmrs-repo]: https://github.com/u1f408/palmrs/
 [palmrs-docs]: https://u1f408.github.io/palmrs/
+[db-formats]: <%= @config[:base_url] %>/projects/palmos/db-formats/
 [hello-source]: https://github.com/jichu4n/prc-tools-remix/tree/master/tools/hello-world-app/
 [hello-prctools]: https://palm.sfo2.cdn.digitaloceanspaces.com/hello/hello-v1.prc
 [hello-modern]: https://palm.sfo2.cdn.digitaloceanspaces.com/hello/hello-v2.prc
