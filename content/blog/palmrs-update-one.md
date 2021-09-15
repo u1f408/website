@@ -4,7 +4,8 @@ title: "palm.rs update #1: 2021-09-15"
 created_at: 2021-09-15T00:00:00Z
 tags:
   - development
-  - palmos
+  - PalmOS
+  - palm.rs
 ---
 
 # palm.rs update #1: 2021-09-15

@@ -36,6 +36,20 @@ Long-term plans:
 * HotSync desktop implementation
 
 
+### Blog posts about palm.rs
+
+Collated here for easy reference.
+
+<ul>
+<% sorted_articles.filter{|x| x[:tags].include?('palm.rs')}.each do |article| %>
+  <li><ul class="inline-list">
+    <li><a href="<%= @config[:base_url] + article.reps[:default].path %>"><%= article[:title] %></a></li>
+    <li><span>posted: </span><%= article[:created_at].strftime("%Y-%m-%d") %></li>
+  </ul></li>
+<% end %>
+</ul>
+
+
 ## Modern Palm OS compiler toolchain
 
 Also known as: _screw using GCC 2, if I'm writing C I want it to be nice!_
