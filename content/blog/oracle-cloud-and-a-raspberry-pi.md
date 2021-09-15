@@ -107,7 +107,7 @@ sleep 1 && nm-applet &
 
 ### The obligatory neofetch screenshot
 
-[![neofetch on the Pi 4, with a Hatsune Miku wallpaper][ss-neofetch]][ss-neofetch]
+[![neofetch on the Pi 4, with a Hatsune Miku wallpaper][ss-neofetch]][ss-neofetch]{:.imglink target="_blank"}
 
 ## Putting it together
 
@@ -125,7 +125,7 @@ Here's a screenshot (which has also been posted to our Twitter, so you may have
 already seen it!) of this setup in action, in the midst of some feature
 development in Kūkupa:
 
-[![Kūkupa development on the new setup][ss-kukupa]][ss-kukupa]
+[![Kūkupa development on the new setup][ss-kukupa]][ss-kukupa]{:.imglink target="_blank"}
 
 This was mostly a rambling mess of a blog post, but oh well :)
 

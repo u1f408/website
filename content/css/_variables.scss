@@ -1,6 +1,16 @@
 :root {
 	--body-border-radius: 4px;
-	--body-foreground: #303030;
-	--body-background: #f0f0f0;
-	--link-foreground: #c6538c;
+	--body-foreground: rgba(48, 48, 48, 1);
+	--body-background: rgba(240, 240, 240, 1);;
+
+	--link-border-radius: 2px;
+	--link-foreground: rgba(198, 88, 140, 1);
+	--link-background: rgba(230, 230, 230, 1);
+
+	--image-border: rgba(48, 48, 48, 0.6);
+
+	--code-border-radius: 4px;
+	--code-border: rgba(48, 48, 48, 0.6);
+	--code-background: rgba(230, 230, 230, 1);
+	--code-foreground: rgba(48, 48, 48, 1);
 }

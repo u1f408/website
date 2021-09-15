@@ -26,8 +26,22 @@
 		padding: 0;
 
 		&:not(:last-child):after {
-			content: ' \00b7 ';
+			content: '\0020\00b7\0020';
+		}
+	}
+
+	&.path {
+		li:not(:last-child):after {
+			content: '\0020\203a\0020';
 		}
 	}
 }
 
+.sr-only {
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+}

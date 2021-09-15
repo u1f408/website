@@ -21,8 +21,8 @@ body {
 
 a {
 	display: inline-block;
-	border-radius: 2px;
 	text-decoration: none;
+	border-radius: var(--link-border-radius);
 	color: var(--link-foreground);
 
 	transition: 0.2s padding, 0.2s background-color, 0.2s color;
@@ -38,7 +38,20 @@ a {
 	}
 }
 
+code {
+	font-family: monospace;
+	display: inline-block;
+	margin: 0 0.125rem -0.025em 0.125rem;
+	padding: 0.125rem 0.5rem;
+
+	color: var(--code-foreground);
+	background: var(--code-background);
+	border: 1px solid var(--code-border);
+	border-radius: var(--code-border-radius);
+}
+
 @import "navigation";
-@import "page_body";
 @import "breadcrumbs";
+@import "page_body";
+@import "post";
 @import "utils";
