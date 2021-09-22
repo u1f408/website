@@ -1,0 +1,33 @@
+.index-top {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+
+	gap: 1rem;
+
+	@media screen and (min-width: 48rem) {
+		flex-flow: row wrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.index-top-image {
+		display: block;
+		max-width: 16rem;
+		margin: 0;
+	}
+
+	.index-top-content {
+		display: block;
+		flex: 1;
+
+		p:first-child {
+			margin-top: 0;
+		}
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

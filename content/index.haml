@@ -4,19 +4,42 @@ title: Hewwo, world!
 
 %h1 Hewwo, world!
 
-%p
-  This is the Internet Website of
-  %strong The Iris System,
-  who, as a collective, use
-  %a{href: 'https://pronoun.is/they/them'} plural they/them
-  pronouns.
+%section.index-top
+  %img.index-top-image{src: 'https://media.catstret.ch/avatars/irissystem-latest.png'}
+  .index-top-content
+    %p
+      This is the Internet Website of
+      %strong The Iris System,
+      who, as a collective, use
+      %a{href: 'https://pronoun.is/they/them'} plural they/them
+      pronouns.
+
+    %p
+      We do various things, including (but not limited to):
+      %ul
+        %li
+          being gay,
+        %li
+          = succeed ', ' do
+            %a{href: @config[:base_url] + '/projects'}
+              working on open source projects
+        %li
+          = succeed ', ' do
+            shitposting on both
+            %a{href: 'https://twitter.com/raspberryMiku'}
+              Twitter
+            and
+            %a{href: 'https://cloudisland.nz/@iris'}
+              Mastodon
+        %li
+          and being gay.
 
 
 %section
   %h2 About us
 
   .system-member-card
-    %img.system-member-avatar{src: 'https://oops-all-kittens.sfo2.digitaloceanspaces.com/avatars/darcy.png'}
+    %img.system-member-avatar{src: 'https://media.catstret.ch/avatars/darcy-latest.png'}
     .system-member-info
       %h1 Darcy / Miku
       %p
@@ -33,7 +56,7 @@ title: Hewwo, world!
         %dd 💙
 
   .system-member-card
-    %img.system-member-avatar{src: 'https://oops-all-kittens.sfo2.digitaloceanspaces.com/avatars/void.png'}
+    %img.system-member-avatar{src: 'https://media.catstret.ch/avatars/void-latest.png'}
     .system-member-info
       %h1 Void
       %p
@@ -50,7 +73,7 @@ title: Hewwo, world!
         %dd ⬛
 
   .system-member-card
-    %img.system-member-avatar{src: 'https://oops-all-kittens.sfo2.digitaloceanspaces.com/avatars/blue.png'}
+    %img.system-member-avatar{src: 'https://media.catstret.ch/avatars/blue-latest.png'}
     .system-member-info
       %h1 Blue
       %p
