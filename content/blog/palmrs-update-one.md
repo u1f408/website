@@ -40,7 +40,7 @@ individual section. It's basically [palmdump][], but using the fancy new
 Here's a screenshot of `palmrs-db-dump` in action, dumping a "hello world"
 Palm OS application:
 
-<%= imglink 'https://oops-all-kittens.sfo2.digitaloceanspaces.com/blog/2021-09-15-050702_761x1025_scrot.png', alt: "Database dump of a hello world app" %>
+<%= imglink 'https://media.catstret.ch/post-assets/palmrs-u1-dump.png', alt: "Database dump of a hello world app" %>
 
 
 ## HotSync conduits, sort of: todo.txt support
@@ -55,7 +55,7 @@ In it's current state, the `palmrs-conduit-todotxt` binary works to transform a
 `ToDoDB.pdb` into a `todo.txt` file (or, two files: `todo.txt` and `done.txt`),
 and this is working rather well:
 
-<%= imglink 'https://oops-all-kittens.sfo2.digitaloceanspaces.com/blog/2021-09-15-045106_963x453_scrot.png', alt: "Generating todo.txt files from a Palm database - yes please!" %>
+<%= imglink 'https://media.catstret.ch/post-assets/palmrs-u1-todotxt.png', alt: "Generating todo.txt files from a Palm database - yes please!" %>
 
 The next step: converting a `todo.txt` file back into a `ToDoDB.prc` file, such
 that I can throw that at Palm Desktop and cross my fingers.

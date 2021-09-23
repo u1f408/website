@@ -107,7 +107,7 @@ sleep 1 && nm-applet &
 
 ### The obligatory neofetch screenshot
 
-<%= imglink 'https://oops-all-kittens.sfo2.digitaloceanspaces.com/blog/2021-09-10-084622_1920x1080_scrot.png', alt: "neofetch on the Pi 4, with a Hatsune Miku wallpaper" %>
+<%= imglink 'https://media.catstret.ch/post-assets/oci-rpi4-neofetch.png', alt: "neofetch on the Pi 4, with a Hatsune Miku wallpaper" %>
 
 ## Putting it together
 
@@ -125,7 +125,7 @@ Here's a screenshot (which has also been posted to our Twitter, so you may have
 already seen it!) of this setup in action, in the midst of some feature
 development in Kūkupa:
 
-<%= imglink 'https://oops-all-kittens.sfo2.digitaloceanspaces.com/blog/2021-09-10-004151_1920x1080_scrot.png', alt: "Kūkupa development on the new setup" %>
+<%= imglink 'https://media.catstret.ch/post-assets/oci-rpi4-kukupa.png', alt: "Kūkupa development on the new setup" %>
 
 This was mostly a rambling mess of a blog post, but oh well :)
 
